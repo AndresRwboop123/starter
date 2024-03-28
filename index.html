@@ -13,22 +13,36 @@
     html {
     font-family: "Inter", sans-serif;
     }
+
+
+    
         header {
           border: 1px solid red;
           height: 152px;
         }
         section {
           border: 1px solid purple;
-          height: 340px;
+          height: auto;
         }
         main {
           border: 1px solid blue;
           height: auto;
         }
         footer {
-          border: 1px solid #009145; /* Hexadecimal color code*/
+          border: 1px solid #009145; 
           min-height: 368px;
         }
+    
+
+    /*
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    }
+    */
 
 
         .container{
@@ -40,6 +54,126 @@
 
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+        /* coolor de header*/
+        .rojo-header{
+            background-color: #FF3B3C;
+        }
+
+
+        /* coolor del buscador y modificando */
+        .rojo-header-sector1-buscador input[type="search"]
+           {
+               background-color: #fff6f6;
+               border: 0;
+               border-radius: 6px;
+               width: 100%;
+               padding: 7px;
+               font-size: 14px;
+           }
+
+
+              /* poniendo los tres en separados del sector1 de header*/
+         .rojo-header-sector1{
+            padding-top: 20px;
+            display:flex;
+            justify-content: space-around;
+
+         }
+
+           input[type="search"]::placeholder {
+             
+             /* Firefox, Chrome, Opera */
+             text-align: center;
+         }
+
+
+         /* agregando el logo de la tienda y modifcando*/
+         .imagenlogo{
+            width: 70%;
+            height: 50%;
+            
+         }
+
+         .rojo-header-sector1-buscador{
+            position: relative;
+            right: 150px;
+         }
+
+
+
+
+
+
+
+
+         .rojo-header-sector2{
+            display: flex;
+            justify-content: space-around;
+            color: #ffffff;
+            padding-bottom: 15px;
+         }
+
+         
+
+
+
+
+
+
+        
+
+
+
+
+    /* graficando los tamaños de la banner imagen*/
+        .banner-imagen{
+       
+            width: 100%;
+            height: 180px;
+        }
+
+
+        /* posicionando letras sobre el imagen banner */
+        .banner{
+            position: relative;
+            
+        }
+
+        .texto-encima1,.texto-encima2{
+            font-weight:bold;
+        }
+       
+        .texto-encima1 {
+            color: aliceblue;
+            position: absolute;
+            top: 22%;
+            left: 15%;
+            font-size: 35px;
+        }
+
+        .texto-encima2 {
+            color: aliceblue;
+            position: absolute;
+            top: 36%;
+            left: 15%;
+            font-size: 75px;
+        }
+
+
+
+        /* contenido de las tarjetas y sector de las tarjetas*/
         .product-container{
             columns: 3;
             padding: 60px 350px ;
@@ -55,7 +189,9 @@
             margin-bottom: 25px;
             flex-direction: column;
             display: flex;
-            text-align: center;
+            
+            border-radius:  0% 0% 10% 10%;;
+            padding: 15px;
 
         }
 
@@ -66,6 +202,52 @@
             object-position: center center;
         }
 
+
+        .product-price-block {
+          display: flex;
+          margin: 5px 0;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+
+        .product-title{
+            font-weight:bold;
+        }
+
+
+        .product-description{
+            color:#736280 ;
+            font-size: 10px;
+        }
+
+        .price{
+            font-weight:bold;
+        }
+        .discount{
+            color: #5FA56B;
+        }
+
+
+
+        .product-tax-policy{
+            text-align: left;
+            font-size: 7px;
+        }
+
+        
+    
+
+        .foo-sector1{
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+
+
+
+
       </style>
 
   </head>
@@ -73,10 +255,55 @@
 
 
   <body>
-    Aquí desarrollaremos la estructura de nuestra tienda virtual.
+    
     
     <header>
             <div class="conteiner">
+                <div class="rojo-header">
+
+                    <div class="rojo-header-sector1">
+                        <div class="rojo-header-sector1-textoimg">
+                           
+                                <img src="assets/tiendamia-logo.svg" alt="imagenlogo" class="imagenlogo">
+                           
+                        </div>
+                        <div class="rojo-header-sector1-buscador">
+                              <form name="ejemplo" action="https://www.google.com/search" method="POST"> 
+                                  <input type="search" name="busqueda"   placeholder="search" required>
+                              </form>
+                        </div>
+                        <div class="rojo-header-sector1-imagen">
+                            <img src="assets/facebook.png" alt="facebook" class="facebook">
+                            <img src="assets/instagram.png" alt="instagram" class="instagram">
+                            <img src="assets/truck.png" alt="tractor" class="tractor">
+
+
+                        </div>
+                        
+                    
+                    </div>
+
+                    <div class="rojo-header-sector2">
+                        <div>Ofertas</div>
+                        <div>Como comprar</div>
+                        <div>Costos y tarifas</div>
+                        <div>Mis pedidos</div>
+                        <div>Garantias</div>
+
+
+                    </div>
+
+
+
+
+
+
+
+                    
+
+
+
+                </div>
 
             </div>
 
@@ -89,6 +316,15 @@
     <section>
 
         <div class="conteiner">
+
+            <div class="banner">
+                <img class="banner-imagen" src="assets/hero_bg.png" alt="banner hero">
+                <div class="texto-encima1">tecnología</div>
+                <div class="texto-encima2">renovada</div>
+
+
+            </div>
+
 
         </div>
     </section>
@@ -262,6 +498,44 @@
     <footer>
 
         <div class="conteiner">
+
+            <div class="foo-sector1">
+
+                <div>
+                        Ofertas
+                        <li>laptops</li>
+                        <li>Audio</li>
+                        <li>Auriculares</li>
+                </div>
+
+                <div>
+                    Cómo comprar
+                    <li>Formas de pago</li>
+                    <li>Envíos</li>
+                    <li>Devoluciones</li>
+
+                </div>
+            
+
+                <div>
+                    Costos y tarifas
+                    <li>Impuestos</li>
+                    <li>Facturación</li>
+                </div>
+
+                <div>
+                    Mis pedidos
+                    <li>Pedir nuevamente</li>
+                    <li>Listas de deseos</li>
+                </div>
+
+
+
+                <div>
+                    Garantia
+                </div>
+            </div>
+
 
         </div>
 
