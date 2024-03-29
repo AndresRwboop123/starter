@@ -16,6 +16,8 @@
 
 
     
+    /*
+
         header {
           border: 1px solid red;
           height: 152px;
@@ -32,9 +34,11 @@
           border: 1px solid #009145; 
           min-height: 368px;
         }
+
+        */
     
 
-    /*
+    
 
         *{
     margin: 0;
@@ -42,9 +46,10 @@
     box-sizing: border-box; 
 
     }
-    */
+    
 
 
+    /*
         .container{
             width: 1220px;
             margin: 0 auto;
@@ -54,7 +59,7 @@
 
         }
 
-
+    */
 
 
 
@@ -125,8 +130,17 @@
             padding-bottom: 15px;
          }
 
-         
 
+
+         .facebook{
+            position: relative;
+            left: -15px;
+         }
+         
+         .tractor{
+            position: relative;
+            left: 15px;
+         }
 
 
 
@@ -148,6 +162,7 @@
         /* posicionando letras sobre el imagen banner */
         .banner{
             position: relative;
+            height: 180px;
             
         }
 
@@ -176,8 +191,10 @@
         /* contenido de las tarjetas y sector de las tarjetas*/
         .product-container{
             columns: 3;
-            padding: 60px 350px ;
-            column-gap: 32px;
+            padding: 60px 300px ;
+            column-gap: 100px;
+            
+            
           
 
         }
@@ -190,13 +207,17 @@
             flex-direction: column;
             display: flex;
             
+            
             border-radius:  0% 0% 10% 10%;;
-            padding: 15px;
+            padding: 10px 35px 20px 9px;
+
+            position: relative;
+            left: 15px;
 
         }
 
         .product-img{
-            width:180px;
+            width:210px;
             height: 150px;
            
             object-position: center center;
@@ -213,19 +234,24 @@
 
         .product-title{
             font-weight:bold;
+            font-size: 13px;
         }
 
 
         .product-description{
             color:#736280 ;
-            font-size: 10px;
+            font-size: 8px;
         }
 
         .price{
             font-weight:bold;
+            font-size: 13px;
         }
         .discount{
             color: #5FA56B;
+            font-size: 11px;
+            position: relative;
+            left: 25px;
         }
 
 
@@ -235,14 +261,85 @@
             font-size: 7px;
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*color modificando tambien los footer */
+        .foo-general{
+            background-color: #7525A7;
+            color: #fff6f6;
+        }
+
         
-    
+
+      
+
+       
+
 
         .foo-sector1{
             display: flex;
             justify-content: space-around;
+            
 
         }
+
+
+        .foo-sector1 ul {
+            list-style: none;
+    
+        }
+
+        .foo-sector1 ul li{
+            padding-bottom: 5px;
+        }
+
+        .foo-sector1{
+            padding-top: 25px;
+            padding-bottom: 20px;
+        }
+
+
+        .foo-sector1 h4{
+            padding-bottom:20px ;
+        }
+
+
+
+
+      
+        
+        .lineasepa{
+            
+            position: relative;
+            left: 50px;
+            width: 1200px;
+        }
+
+
+
+        .foo-sector3{
+            display: flex;
+            justify-content: center;
+            padding-top: 29px;
+            padding-bottom: 25px;
+        }
+
+
+
+
+
 
 
 
@@ -258,7 +355,7 @@
     
     
     <header>
-            <div class="conteiner">
+            <div class="sector-rojo-header">
                 <div class="rojo-header">
 
                     <div class="rojo-header-sector1">
@@ -315,7 +412,7 @@
 
     <section>
 
-        <div class="conteiner">
+       
 
             <div class="banner">
                 <img class="banner-imagen" src="assets/hero_bg.png" alt="banner hero">
@@ -326,7 +423,7 @@
             </div>
 
 
-        </div>
+        
     </section>
 
 
@@ -335,158 +432,158 @@
 
     <main>
 
-        <div class="conteiner">
+        
 
 
             <div class="product-container">
 
-                <article class="product-card"> 
-                       <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
-                       <div class="product-info">
-                           <span class="product-title">
-                            Macbook Pro 15'4
-                           </span>
-       
-                           <span class="product-description">
-                            Space Gray
-                           </span>
-       
-                           <div class="product-price-block">
-                               <span class="price">$750.000</span>
-                               <span class="discount">50% Off</span>
-       
-                           </div>
-                           <div class="product-tax-policy">
-                            Incluye impuesto País y percepción AFIP
-                           </div>
-       
+                   <article class="product-card"> 
+                          <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
+                          <div class="product-info">
+                              <span class="product-title">
+                               Macbook Pro 15'4
+                              </span>
+          
+                              <span class="product-description">
+                               Space Gray
+                              </span>
+          
+                              <div class="product-price-block">
+                                  <span class="price">$750.000</span>
+                                  <span class="discount">50% Off</span>
+          
+                              </div>
+                              <div class="product-tax-policy">
+                               Incluye impuesto País y percepción AFIP
+                              </div>
+          
+                          </div>
+               </article>   
+   
+               
+               <article class="product-card"> 
+                   <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
+                   <div class="product-info">
+                       <span class="product-title">
+                        Macbook Pro 15'4
+                       </span>
+   
+                       <span class="product-description">
+                        Space Gray
+                       </span>
+   
+                       <div class="product-price-block">
+                           <span class="price">$750.000</span>
+                           <span class="discount">50% Off</span>
+   
                        </div>
-            </article>   
-
-            
-            <article class="product-card"> 
-                <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
-                <div class="product-info">
-                    <span class="product-title">
-                     Macbook Pro 15'4
-                    </span>
-
-                    <span class="product-description">
-                     Space Gray
-                    </span>
-
-                    <div class="product-price-block">
-                        <span class="price">$750.000</span>
-                        <span class="discount">50% Off</span>
-
-                    </div>
-                    <div class="product-tax-policy">
-                     Incluye impuesto País y percepción AFIP
-                    </div>
-
-                </div>
-            </article>
-            
-            
-            <article class="product-card"> 
-                <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
-                <div class="product-info">
-                    <span class="product-title">
-                     Macbook Pro 15'4
-                    </span>
-
-                    <span class="product-description">
-                     Space Gray
-                    </span>
-
-                    <div class="product-price-block">
-                        <span class="price">$750.000</span>
-                        <span class="discount">50% Off</span>
-
-                    </div>
-                    <div class="product-tax-policy">
-                     Incluye impuesto País y percepción AFIP
-                    </div>
-
-                </div>
-            </article>
-
-
-            <article class="product-card"> 
-                <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
-                <div class="product-info">
-                    <span class="product-title">
-                     Macbook Pro 15'4
-                    </span>
-
-                    <span class="product-description">
-                     Space Gray
-                    </span>
-
-                    <div class="product-price-block">
-                        <span class="price">$750.000</span>
-                        <span class="discount">50% Off</span>
-
-                    </div>
-                    <div class="product-tax-policy">
-                     Incluye impuesto País y percepción AFIP
-                    </div>
-
-                </div>
-            </article>
-
-
-            <article class="product-card"> 
-                <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
-                <div class="product-info">
-                    <span class="product-title">
-                     Macbook Pro 15'4
-                    </span>
-
-                    <span class="product-description">
-                     Space Gray
-                    </span>
-
-                    <div class="product-price-block">
-                        <span class="price">$750.000</span>
-                        <span class="discount">50% Off</span>
-
-                    </div>
-                    <div class="product-tax-policy">
-                     Incluye impuesto País y percepción AFIP
-                    </div>
-
-                </div>
-            </article>
-
-
-            <article class="product-card"> 
-                <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
-                <div class="product-info">
-                    <span class="product-title">
-                     Macbook Pro 15'4
-                    </span>
-
-                    <span class="product-description">
-                     Space Gray
-                    </span>
-
-                    <div class="product-price-block">
-                        <span class="price">$750.000</span>
-                        <span class="discount">50% Off</span>
-
-                    </div>
-                    <div class="product-tax-policy">
-                     Incluye impuesto País y percepción AFIP
-                    </div>
-
-                </div>
-            </article>
+                       <div class="product-tax-policy">
+                        Incluye impuesto País y percepción AFIP
+                       </div>
+   
+                   </div>
+               </article>
+               
+               
+               <article class="product-card"> 
+                   <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
+                   <div class="product-info">
+                       <span class="product-title">
+                        Macbook Pro 15'4
+                       </span>
+   
+                       <span class="product-description">
+                        Space Gray
+                       </span>
+   
+                       <div class="product-price-block">
+                           <span class="price">$750.000</span>
+                           <span class="discount">50% Off</span>
+   
+                       </div>
+                       <div class="product-tax-policy">
+                        Incluye impuesto País y percepción AFIP
+                       </div>
+   
+                   </div>
+               </article>
+   
+   
+               <article class="product-card"> 
+                   <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
+                   <div class="product-info">
+                       <span class="product-title">
+                        Macbook Pro 15'4
+                       </span>
+   
+                       <span class="product-description">
+                        Space Gray
+                       </span>
+   
+                       <div class="product-price-block">
+                           <span class="price">$750.000</span>
+                           <span class="discount">50% Off</span>
+   
+                       </div>
+                       <div class="product-tax-policy">
+                        Incluye impuesto País y percepción AFIP
+                       </div>
+   
+                   </div>
+               </article>
+   
+   
+               <article class="product-card"> 
+                   <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
+                   <div class="product-info">
+                       <span class="product-title">
+                        Macbook Pro 15'4
+                       </span>
+   
+                       <span class="product-description">
+                        Space Gray
+                       </span>
+   
+                       <div class="product-price-block">
+                           <span class="price">$750.000</span>
+                           <span class="discount">50% Off</span>
+   
+                       </div>
+                       <div class="product-tax-policy">
+                        Incluye impuesto País y percepción AFIP
+                       </div>
+   
+                   </div>
+               </article>
+   
+   
+               <article class="product-card"> 
+                   <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
+                   <div class="product-info">
+                       <span class="product-title">
+                        Macbook Pro 15'4
+                       </span>
+   
+                       <span class="product-description">
+                        Space Gray
+                       </span>
+   
+                       <div class="product-price-block">
+                           <span class="price">$750.000</span>
+                           <span class="discount">50% Off</span>
+   
+                       </div>
+                       <div class="product-tax-policy">
+                        Incluye impuesto País y percepción AFIP
+                       </div>
+   
+                   </div>
+               </article>
 
             
 
             </div>
-        </div>
+        
 
     </main>
 
@@ -495,49 +592,104 @@
 
 
     
+
+
+
     <footer>
 
-        <div class="conteiner">
+       
+            <div class="foo-general">
 
-            <div class="foo-sector1">
-
-                <div>
-                        Ofertas
-                        <li>laptops</li>
-                        <li>Audio</li>
-                        <li>Auriculares</li>
-                </div>
-
-                <div>
-                    Cómo comprar
-                    <li>Formas de pago</li>
-                    <li>Envíos</li>
-                    <li>Devoluciones</li>
-
-                </div>
             
 
-                <div>
-                    Costos y tarifas
-                    <li>Impuestos</li>
-                    <li>Facturación</li>
-                </div>
+                    <div class="foo-sector1">
+        
+                        <div>
+                                <ul>
+                               <h4>Ofertas</h4> 
 
-                <div>
-                    Mis pedidos
-                    <li>Pedir nuevamente</li>
-                    <li>Listas de deseos</li>
-                </div>
+                                <li>laptops</li>
+                                <li>Audio</li>
+                                <li>Auriculares</li>
+                              </ul>
+                        </div>
+        
+                        <div>
+
+                            <ul>
+                               <h4>Cómo comprar</h4> 
+                                <li>Formas de pago</li>
+                                <li>Envíos</li>
+                                <li>Devoluciones</li>
+
+                            </ul>
+                          
+        
+                        </div>
+                    
+        
+                        <div>
+                            
+                            <ul>
+
+                                <h4>Costos y tarifas</h4>
+                                <li>Impuestos</li>
+                                <li>Facturación</li>
+                            </ul>
+                         
+                        </div>
 
 
 
-                <div>
-                    Garantia
-                </div>
+        
+                        <div>
+                            <ul>
+                                <h4>Mis pedidos</h4>
+                                <li>Pedir nuevamente</li>
+                                <li>Listas de deseos</li>
+
+                            </ul>
+                           
+                        </div>
+        
+
+
+
+        
+        
+                        <div>
+                            <h4>Garantía</h4>
+                        </div>
+                    </div>
+
+
+
+                    <div class="foo-sector2">
+
+                        <div class="foo-sector2-linea">
+
+                            <hr class="lineasepa">
+
+                        </div>
+                       
+
+                    </div>
+
+
+                    <div class=" foo-sector3">
+
+                        <h6> Curso de HTML * Css 2023</h6>
+
+
+                    </div>
+
+
+
+
+
             </div>
 
-
-        </div>
+       
 
     </footer>
 
