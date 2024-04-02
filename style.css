@@ -1,30 +1,119 @@
-.product-container{
+
+
+
+/* Hero section */
+section#hero {
+    border: 1px solid purple;
+    height: 340px;
+    background: url("assets/hero_bg.png");
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .title-container span {
+    display: block;
+    color: white;
+    font-weight: 700;
+  }
+
+  section#hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+
+  .title-container span:first-child {
+    font-size: 40px;
+  }
+
+  .title-container span:last-child {
+    font-size: 100px;
+    line-height: 80px;
+  }
+
+
+
+
+  .product-container{
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 10fr);
+   
+    
     grid-gap: 5px;
 }
-
 
 @media (min-width: 700px){
 
 
     .product-card {
        
-        border-radius: 14px;
-        width: auto;
-      }
+          border-radius: 14px;
+          width: auto;
+
+      } 
+
+
+
+
+
+
 
 
     .product-img{
 
-        width: 55%;
+        width: 45%;
         border-radius: 14px;
         position: relative;
-        left: 85px;
+        left: 115px;
         margin-top: 40px;
 
     }
+
+
+
+    .product-card:nth-child(-n+3){
+      margin-top: 50px;
+    }
+
+    .product-card:nth-child(n+4){
+      
+      margin-bottom: 70px;
+
+    }
+
+    .product-card:nth-child(1){
+
+      position: relative;
+        left: 150px;
+    }
+
+    
+    .product-card:nth-child(4){
+
+      position: relative;
+        left: 150px;
+    }
+
+    
+    .product-card:nth-child(3){
+
+      position: relative;
+        right: 150px;
+    }
+
+
+
+    .product-card:nth-child(6){
+
+      position: relative;
+        right: 150px;
+    }
+
+
+
 
     .product-info{
         background-color: #F0F0F0;
@@ -32,15 +121,16 @@
         margin-bottom: 25px;
         flex-direction: column;
         display: flex;
-        margin: 10px 185px 3px 10px;
+        margin: 10px 250px 3px 10px;
         
         border-radius:  0% 0% 10% 10%;;
         padding:5px;
 
         position: relative;
-        left: 70px;
+        left: 110px;
 
     }
+
 
 
     .product-price-block {
