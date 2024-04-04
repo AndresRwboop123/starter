@@ -377,67 +377,6 @@ right: 150px;
 
 
 
-@media (min-width: 700px){
-
-
- 
-
-
-    .product-info{
-        background-color: #F0F0F0;
-        margin-top: 15px;
-        margin-bottom: 25px;
-        flex-direction: column;
-        display: flex;
-        margin: 10px 250px 3px 10px;
-        
-        border-radius:  0% 0% 10% 10%;;
-        padding:5px;
-
-        position: relative;
-        left: 110px;
-
-    }
-
-
-
-    .product-price-block {
-      display: flex;
-      margin: 5px 0;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-
-    .product-title{
-        font-weight:bold;
-        font-size: 13px;
-    }
-
-
-    .product-description{
-        color:#736280 ;
-        font-size: 8px;
-    }
-
-    .price{
-        font-weight:bold;
-        font-size: 13px;
-    }
-    .discount{
-        color: #5FA56B;
-        font-size: 11px;
-        position: relative;
-        left: 2px;
-    }
-
-
-
-    .product-tax-policy{
-        text-align: left;
-        font-size: 7px;
-
-    }
 
 
 
@@ -445,7 +384,8 @@ right: 150px;
 
 
 
-}
+
+
 
 
 
@@ -453,7 +393,7 @@ right: 150px;
 
   header{
 
-    width: auto;
+    width: 100%;
     height: 350px;
     display: flex;
     flex-wrap: wrap;
@@ -474,6 +414,7 @@ right: 150px;
 
 
 .search nav{
+  
   padding: 100px;
   position: relative;
   left: -10px;
@@ -564,3 +505,117 @@ left: 35px;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query de telefono*/
+
+@media (max-width: 425px){
+
+  header{
+
+    width: 569px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 700px){
+
+
+ 
+
+
+    .product-info{
+        background-color: #F0F0F0;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        flex-direction: column;
+        display: flex;
+        margin: 10px 250px 3px 10px;
+        
+        border-radius:  0% 0% 10% 10%;;
+        padding:5px;
+
+        position: relative;
+        left: 110px;
+
+    }
+
+
+
+    .product-price-block {
+      display: flex;
+      margin: 5px 0;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    .product-title{
+        font-weight:bold;
+        font-size: 13px;
+    }
+
+
+    .product-description{
+        color:#736280 ;
+        font-size: 8px;
+    }
+
+    .price{
+        font-weight:bold;
+        font-size: 13px;
+    }
+    .discount{
+        color: #5FA56B;
+        font-size: 11px;
+        position: relative;
+        left: 2px;
+    }
+
+
+
+    .product-tax-policy{
+        text-align: left;
+        font-size: 7px;
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
