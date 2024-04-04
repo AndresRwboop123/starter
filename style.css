@@ -1,10 +1,32 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+
+  }
+
+header {
+  background-color: #ff3b3c; /* Ejemplo de color */
+}
+
+body,
+html {
+font-family: "Inter", sans-serif;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+
+}
 
 
-/* Hero section */
+/* Hero section o el banner grande de tecnologia */
 section#hero {
     border: 1px solid purple;
-    height: 340px;
+    
+    height: 210px;
     background: url("assets/hero_bg.png");
     background-size: cover;
     background-position: top center;
@@ -20,19 +42,175 @@ section#hero {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
   }
 
 
 
   .title-container span:first-child {
     font-size: 40px;
+    position: relative;
+    top:  30px;
+    left: 150px;
   }
 
   .title-container span:last-child {
     font-size: 100px;
     line-height: 80px;
+    position: relative;
+    top:  30px;
+    left: 150px;
   }
+
+
+
+
+
+
+
+
+
+
+
+  .logo{
+    position: relative;
+    left: 50px;
+  }
+
+ 
+
+  .search {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .search .form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  input[type="text"]::placeholder {
+             
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+
+
+.search .form input {
+  height: 10px;
+  border-radius: 14px;
+  border: none;
+  width: 190px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+.search .social ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.tractor{
+  position: relative;
+  top: 10px;
+  width: 25px;
+}
+
+/* explicacion de hijos nth-child*/
+.social ul li:nth-child(2){
+position: relative;
+top: 5px;
+}
+
+.social{
+  position: relative;
+  left: -100px;
+}
+
+
+
+
+.search .social ul li {
+  padding: 0 10px;
+}
+
+
+.nav {
+  padding: 10px 0;
+}
+
+  
+
+
+
+
+
+.nav {
+  padding: 30px 0 40px 0;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+.nav ul li{
+  margin-right: 110px
+
+}
+
+.nav ul li {
+  list-style: none;    
+}
+
+
+.nav ul li a {
+  
+  color: #fff6f6;   
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -46,74 +224,163 @@ section#hero {
     grid-gap: 5px;
 }
 
-@media (min-width: 700px){
 
 
-    .product-card {
+
+
+
+.product-card {
        
-          border-radius: 14px;
-          width: auto;
+  border-radius: 14px;
+  width: auto;
 
-      } 
-
-
+} 
 
 
 
 
 
 
-    .product-img{
-
-        width: 45%;
-        border-radius: 14px;
-        position: relative;
-        left: 115px;
-        margin-top: 40px;
-
-    }
 
 
+.product-img{
 
-    .product-card:nth-child(-n+3){
-      margin-top: 50px;
-    }
+width: 45%;
+border-radius: 14px;
+position: relative;
+left: 115px;
+margin-top: 40px;
 
-    .product-card:nth-child(n+4){
-      
-      margin-bottom: 70px;
-
-    }
-
-    .product-card:nth-child(1){
-
-      position: relative;
-        left: 150px;
-    }
-
-    
-    .product-card:nth-child(4){
-
-      position: relative;
-        left: 150px;
-    }
-
-    
-    .product-card:nth-child(3){
-
-      position: relative;
-        right: 150px;
-    }
+}
 
 
 
-    .product-card:nth-child(6){
+.product-card:nth-child(-n+3){
+margin-top: 50px;
+}
 
-      position: relative;
-        right: 150px;
-    }
+.product-card:nth-child(n+4){
+
+margin-bottom: 70px;
+
+}
+
+.product-card:nth-child(1){
+
+position: relative;
+left: 150px;
+}
 
 
+.product-card:nth-child(4){
+
+position: relative;
+left: 150px;
+}
+
+
+.product-card:nth-child(3){
+
+position: relative;
+right: 150px;
+}
+
+
+
+.product-card:nth-child(6){
+
+position: relative;
+right: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*color modificando tambien los footer */
+ .foo-general{
+  background-color: #7525A7;
+  color: #fff6f6;
+}
+
+
+
+
+
+
+
+
+.foo-sector1{
+  display: flex;
+  justify-content: space-around;
+  
+
+}
+
+
+.foo-sector1 ul {
+  list-style: none;
+
+}
+
+.foo-sector1 ul li{
+  padding-bottom: 5px;
+}
+
+.foo-sector1{
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+
+.foo-sector1 h4{
+  padding-bottom:20px ;
+}
+
+
+
+
+
+
+.lineasepa{
+  
+  position: relative;
+  left: 50px;
+  width: 1200px;
+}
+
+
+
+.foo-sector3{
+  display: flex;
+  justify-content: center;
+  padding-top: 29px;
+  padding-bottom: 25px;
+}
+
+
+
+@media (min-width: 768px){
+
+
+ 
 
 
     .product-info{
@@ -169,8 +436,130 @@ section#hero {
     .product-tax-policy{
         text-align: left;
         font-size: 7px;
+
     }
 
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 768px){
+
+  header{
+
+    width: auto;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+  }
+
+  .search{
+    display: flex;
+    flex-direction: column;
+  
+    position: relative;
+    left: -50px;
+    top: 45px;
+   
+  }
+
+
+
+.search nav{
+  padding: 100px;
+  position: relative;
+  left: -10px;
+ 
+}
+
+
+.nav ul li{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: -60px;
+  top: 20px;
+}
+
+  
+
+  .social{
+    margin-top: 2px;
+    position: relative;
+    left: -10px;
+  }
+
+.search form  input{
+  width: 5px;
+  
+}
+
+.nav ul{
+display: block;
+position: relative;
+left: 35px;
+}
+
+
+
+.title-container span:nth-child(1){
+
+  position: relative;
+  right: 1px;
+  font-size: 15px;
+
+
+}
+ 
+
+
+.product-container{
+
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 10fr);
+    
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card:nth-child(n){
+  position: relative;
+  left: 30px;
+  align-items: center;
+
+}
+
+.product-info{
+  background-color: #F0F0F0;
+ 
+  margin-bottom: 25px;
+  flex-direction: column;
+  display: flex;
+  margin: 10px 250px 3px 10px;
+  border-radius: 0% 0% 10% 10%;
+  padding: 5px;
+  justify-content: center;
+  position:initial;
+  
+}
+
+
+
+
+.lineasepa{
+  width: 10px;
+}
 
 
 

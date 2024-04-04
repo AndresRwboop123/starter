@@ -12,10 +12,8 @@
 
     <style>
 
-    body,
-    html {
-    font-family: "Inter", sans-serif;
-    }
+    
+
 
 
     
@@ -33,6 +31,10 @@
           border: 1px solid blue;
           height: auto;
         }
+
+         
+        
+
         footer {
           border: 1px solid #009145; 
           min-height: 368px;
@@ -43,12 +45,6 @@
 
     
 
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-
-    }
     
 
 
@@ -75,12 +71,16 @@
 
 
         /* coolor de header*/
+
+         /* 
         .rojo-header{
             background-color: #FF3B3C;
         }
-
+        */
 
         /* coolor del buscador y modificando */
+
+        /*
         .rojo-header-sector1-buscador input[type="search"]
            {
                background-color: #fff6f6;
@@ -90,9 +90,11 @@
                padding: 7px;
                font-size: 14px;
            }
-
+        */
 
               /* poniendo los tres en separados del sector1 de header*/
+
+        /*
          .rojo-header-sector1{
             padding-top: 20px;
             display:flex;
@@ -102,12 +104,14 @@
 
            input[type="search"]::placeholder {
              
-             /* Firefox, Chrome, Opera */
+             
              text-align: center;
          }
 
+         */
 
          /* agregando el logo de la tienda y modifcando*/
+         /*
          .imagenlogo{
             width: 70%;
             height: 50%;
@@ -149,7 +153,7 @@
 
 
 
-
+         */
 
 
 
@@ -219,67 +223,6 @@
 
 
 
- /*color modificando tambien los footer */
-        .foo-general{
-            background-color: #7525A7;
-            color: #fff6f6;
-        }
-
-        
-
-      
-
-       
-
-
-        .foo-sector1{
-            display: flex;
-            justify-content: space-around;
-            
-
-        }
-
-
-        .foo-sector1 ul {
-            list-style: none;
-    
-        }
-
-        .foo-sector1 ul li{
-            padding-bottom: 5px;
-        }
-
-        .foo-sector1{
-            padding-top: 25px;
-            padding-bottom: 20px;
-        }
-
-
-        .foo-sector1 h4{
-            padding-bottom:20px ;
-        }
-
-
-
-
-      
-        
-        .lineasepa{
-            
-            position: relative;
-            left: 50px;
-            width: 1200px;
-        }
-
-
-
-        .foo-sector3{
-            display: flex;
-            justify-content: center;
-            padding-top: 29px;
-            padding-bottom: 25px;
-        }
-
 
 
 
@@ -299,53 +242,69 @@
     
     
     <header>
-            <div class="sector-rojo-header">
-                <div class="rojo-header">
+            <div class="search">
+                
 
-                    <div class="rojo-header-sector1">
-                        <div class="rojo-header-sector1-textoimg">
-                           
-                                <img src="assets/tiendamia-logo.svg" alt="imagenlogo" class="imagenlogo">
-                           
-                        </div>
-                        <div class="rojo-header-sector1-buscador">
-                              <form name="ejemplo" action="https://www.google.com/search" method="POST"> 
-                                  <input type="search" name="busqueda"   placeholder="search" required>
-                              </form>
-                        </div>
-                        <div class="rojo-header-sector1-imagen">
-                            <img src="assets/facebook.png" alt="facebook" class="facebook">
-                            <img src="assets/instagram.png" alt="instagram" class="instagram">
-                            <img src="assets/truck.png" alt="tractor" class="tractor">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/tiendamia-logo.svg" width="218" alt="Logo store" />
+                    </a>
+                </div>
 
 
-                        </div>
-                        
-                    
-                    </div>
-
-                    <div class="rojo-header-sector2">
-                        <div>Ofertas</div>
-                        <div>Como comprar</div>
-                        <div>Costos y tarifas</div>
-                        <div>Mis pedidos</div>
-                        <div>Garantias</div>
-
-
-                    </div>
-
-
-
-
-
-
-
-                    
-
-
+                <div class="form">
+                    <form>
+                      <input type="text" placeholder="Search" />
+                    </form>
 
                 </div>
 
+
+                <div class="social">
+                    <!-- Aquí irán los íconos de redes sociales -->
+                    
+
+                    <ul>
+                        <li><a href="#"><img src="assets/facebook.png" alt="facebook" class="facebook"></a></li>
+                        <li><a href="#"><img src="assets/instagram.png" alt="instagram" class="instagram"></a></li>
+                        <li><a href="#"><img src="assets/truck.png" alt="tractor" class="tractor"></a></li>
+                    </ul>
+                </div>
+
+            
+
+
+
+             
+                        
+                    
+                    
+
+           
+
+
+
+
+
+
+
+                    
+
+
+
+                
+
+            </div>
+               
+            <div class="nav">
+                <ul>
+                  <li><a href="#">Ofertas</a></li>
+                  <li><a href="#">Como comprar</a></li>
+                  <li><a href="#">Costos y tarifas</a></li>
+                  <li><a href="#">Mis pedidos</a></li>
+                  <li><a href="#">Garantias</a></li>
+                  <!-- Más elementos de lista aquí -->
+                </ul>
             </div>
 
     </header>
@@ -375,7 +334,7 @@
 
             <div class="product-container">
 
-                
+
                    <article class="product-card"> 
                           <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                           <div class="product-info">

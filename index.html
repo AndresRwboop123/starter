@@ -126,9 +126,32 @@
          .rojo-header-sector2{
             display: flex;
             justify-content: space-around;
-            color: #ffffff;
             padding-bottom: 15px;
+          
          }
+
+         .rojo-header-sector2 li {
+           
+            list-style: none;    
+           
+            
+         }
+
+         .rojo-header-sector2 li a {
+          color: #fff6f6; 
+          text-decoration: none;
+          font-weight: bold;
+          transition: all
+         }
+
+         .rojo-header-sector2 li  a:hover{
+        padding: 5px 10px;
+        background-color: rgba(150, 38, 38, 0.89);
+        color: #f4ffe6;
+        border-radius: 15px;
+        }
+
+
 
 
 
@@ -360,9 +383,9 @@
 
                     <div class="rojo-header-sector1">
                         <div class="rojo-header-sector1-textoimg">
-                           
+                            <a href="#">
                                 <img src="assets/tiendamia-logo.svg" alt="imagenlogo" class="imagenlogo">
-                           
+                            </a>
                         </div>
                         <div class="rojo-header-sector1-buscador">
                               <form name="ejemplo" action="https://www.google.com/search" method="POST"> 
@@ -381,11 +404,11 @@
                     </div>
 
                     <div class="rojo-header-sector2">
-                        <div>Ofertas</div>
-                        <div>Como comprar</div>
-                        <div>Costos y tarifas</div>
-                        <div>Mis pedidos</div>
-                        <div>Garantias</div>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Costos y tarifas</a></li>
+                        <li><a href="#">Mis pedidos</a></li>
+                        <li><a href="#">Garantias</a></li>
 
 
                     </div>
