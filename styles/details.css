@@ -23,51 +23,6 @@ body{
 
 
 /* Hero section o el banner grande de tecnologia */
-section#hero {
-    border: 1px solid purple;
-    
-    height: 210px;
-    background: url("assets/hero_bg.png");
-    background-size: cover;
-    background-position: top center;
-  }
-
-  .title-container span {
-    display: block;
-    color: white;
-    font-weight: 700;
-  }
-
-  section#hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-  }
-
-
-
-  .title-container span:first-child {
-    font-size: 40px;
-    position: relative;
-    top:  30px;
-    left: 150px;
-  }
-
-  .title-container span:last-child {
-    font-size: 100px;
-    line-height: 80px;
-    position: relative;
-    top:  30px;
-    left: 150px;
-  }
-
-
-
-
-
-
-
 
 
 
@@ -211,87 +166,74 @@ top: 5px;
 
 
 
+/* main */
 
 
+main{
+  padding: 50px;
+  height: auto;
+}
+
+main .columns-container{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
 
 
-  .product-container{
+}
 
-    display: grid;
-    grid-template-columns: repeat(3, 10fr);
-   
-    
-    grid-gap: 5px;
+.product-images-block, 
+.product-description-block, 
+.roduct-checkout-block{
+
+  flex: 1;
+
+}
+
+
+.product-description-block{
+  position: relative;
+  left: -156px;
+}
+
+.product-description-block .titulo {
+  flex: 1;
+  color: #333; /* Elige un color adecuado */
+  font-size: 24px; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold;
+  margin-top: 0;
+  word-wrap: break-word;
 }
 
 
 
 
-
-
-.product-card {
-       
-  border-radius: 14px;
-  width: auto;
-
-} 
-
-
-
-
-
-
-
-
-.product-img{
-
-width: 45%;
-border-radius: 14px;
-position: relative;
-left: 115px;
-margin-top: 40px;
+.product-description-block .selector fieldset  {
+  border: 2px #919191 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px; 
+  width: 75%;
+  border-radius: 15px;
+  font-size: 15px;
 
 }
 
 
 
-.product-card:nth-child(-n+3){
-margin-top: 50px;
-}
 
-.product-card:nth-child(n+4){
+.product-description-block .selector fieldset select{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
 
-margin-bottom: 70px;
 
-}
-
-.product-card:nth-child(1){
-
-position: relative;
-left: 150px;
+  
 }
 
 
-.product-card:nth-child(4){
-
-position: relative;
-left: 150px;
-}
-
-
-.product-card:nth-child(3){
-
-position: relative;
-right: 150px;
-}
-
-
-
-.product-card:nth-child(6){
-
-position: relative;
-right: 150px;
-}
 
 
 
@@ -355,7 +297,20 @@ right: 150px;
 }
 
 
+.foo-sector1 .col ul li a {
+  color: white;
+  text-decoration: none;
+}
 
+
+.foo-sector1 .col:nth-child(3) {
+  position: relative;
+  bottom: 20px;
+}
+.foo-sector1 .col:nth-child(4) {
+  position: relative;
+  bottom: 20px;
+}
 
 
 
@@ -371,7 +326,7 @@ right: 150px;
 .foo-sector3{
   display: flex;
   justify-content: center;
-  padding-top: 29px;
+  padding-top: 200px;
   padding-bottom: 25px;
 }
 
@@ -524,13 +479,131 @@ left: 35px;
 
   header{
 
-    width: 569px;
-    height: 350px;
+    width: 425px;
+    height: 440px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     
   }
+
+  
+
+
+div.form{
+  position: relative;
+  left: 50px;
+}
+
+.nav{
+  position: relative;
+  left: 170px;
+  width: 240px;
+}
+
+.nav ul{
+  width: 220px;
+  height: 200px;
+  position: relative;
+  left: 10px;
+}
+
+.search ul{
+  position: relative;
+  left: 60px;
+}
+
+.nav ul li{
+  
+  width: 150px;
+  left: -35px;
+}
+
+
+
+
+.title-container span:nth-child(1){
+  font-size: 30px;
+  position: relative;
+  left: 20px;
+
+}
+
+.title-container span:nth-child(2){
+  font-size: 54px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.product-card:nth-child(n) {
+  position: relative;
+  left: 0px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.product-card img{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.product-info {
+  margin: auto;
+ width: 55%;
+  font-size: 11px;
+
+}
+
+.product-info span:nth-child(1){
+  font-weight:bold;
+  font-size: 12px;
+
+}
+
+
+.product-description{
+  color:#736280 ;
+  font-size: 8px;
+}
+
+
+.price{
+  font-weight:bold;
+  font-size: 13px;
+}
+
+.discount{
+  color: #5FA56B;
+  font-size: 11px;
+  position: relative;
+  left: 120px;
+}
+
+
+
+
+
+
+
+
 
 
 

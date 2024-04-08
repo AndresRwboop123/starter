@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link  rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="./styles/style.css">
 
     <title>Tienda Virtual</title>
 
@@ -246,7 +246,7 @@
                 
 
                 <div class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="assets/tiendamia-logo.svg" width="218" alt="Logo store" />
                     </a>
                 </div>
@@ -335,7 +335,10 @@
             <div class="product-container">
 
 
-                   <article class="product-card"> 
+                   <article class="product-card">   
+
+                        <a href="./details.html">  <!--aqui se hace un anexo a la pagina detalle-->
+
                           <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                           <div class="product-info">
                               <span class="product-title">
@@ -356,10 +359,16 @@
                               </div>
           
                           </div>
+                        </a>
                </article>   
    
                
                <article class="product-card"> 
+                
+                 <a href="./details.html">
+
+
+
                    <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                    <div class="product-info">
                        <span class="product-title">
@@ -378,12 +387,18 @@
                        <div class="product-tax-policy">
                         Incluye impuesto País y percepción AFIP
                        </div>
-   
+                
                    </div>
+                </a>
+
                </article>
                
                
-               <article class="product-card"> 
+               <article class="product-card">
+                <a href="./details.html">
+
+
+
                    <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                    <div class="product-info">
                        <span class="product-title">
@@ -404,10 +419,13 @@
                        </div>
    
                    </div>
+                </a> 
                </article>
    
    
                <article class="product-card"> 
+                <a href="./details.html">
+
                    <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                    <div class="product-info">
                        <span class="product-title">
@@ -428,10 +446,13 @@
                        </div>
    
                    </div>
+                </a>
                </article>
    
    
                <article class="product-card"> 
+                <a href="./details.html">
+
                    <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                    <div class="product-info">
                        <span class="product-title">
@@ -452,10 +473,15 @@
                        </div>
    
                    </div>
+                </a>
+
                </article>
    
    
                <article class="product-card"> 
+
+                <a href="./details.html">
+
                    <img class="product-img" src="assets/mock1.jpg" alt="Macbook Pro"> 
                    <div class="product-info">
                        <span class="product-title">
@@ -476,6 +502,7 @@
                        </div>
    
                    </div>
+                </a>
                </article>
 
             
@@ -502,23 +529,23 @@
 
                     <div class="foo-sector1">
         
-                        <div>
+                        <div class="col">
                                 <ul>
-                               <h4>Ofertas</h4> 
+                                <li class="col-main-item"><h4><a href="#">Ofertas</a></h4></li> 
 
-                                <li>laptops</li>
-                                <li>Audio</li>
-                                <li>Auriculares</li>
+                                <li><a href="#">laptops</a></li>
+                                <li><a href="#">Audio</a></li>
+                                <li><a href="#">Auriculares</a></li>
                               </ul>
                         </div>
         
-                        <div>
+                        <div class="col">
 
                             <ul>
-                               <h4>Cómo comprar</h4> 
-                                <li>Formas de pago</li>
-                                <li>Envíos</li>
-                                <li>Devoluciones</li>
+                                <li class="col-main-item"><h4><a href="#">Cómo comprar</a></h4></li> 
+                                <li><a href="#">Formas de pago</a></li>
+                                <li><a href="#">Envíos</a></li>
+                                <li><a href="#">Devoluciones</a></li>
 
                             </ul>
                           
@@ -526,13 +553,13 @@
                         </div>
                     
         
-                        <div>
+                        <div class="col">
                             
                             <ul>
 
-                                <h4>Costos y tarifas</h4>
-                                <li>Impuestos</li>
-                                <li>Facturación</li>
+                                <li class="col-main-item"><h4><a href="#"></a><h4><a href="#">Costos y tarifas</a></h4></li> 
+                                <li><a href="#">Impuestos</a></li>
+                                <li><a href="#">Facturación</a></li>
                             </ul>
                          
                         </div>
@@ -540,11 +567,11 @@
 
 
         
-                        <div>
+                        <div class="col">
                             <ul>
-                                <h4>Mis pedidos</h4>
-                                <li>Pedir nuevamente</li>
-                                <li>Listas de deseos</li>
+                                <li class="col-main-item"><h4><a href="#"></a><h4><a href="#">Mis pedidos</a></h4></li> 
+                                <li><a href="#">Pedir nuevamente</a></li>
+                                <li><a href="#">Listas de deseos</a></li>
 
                             </ul>
                            
@@ -555,8 +582,11 @@
 
         
         
-                        <div>
-                            <h4>Garantía</h4>
+                        <div class="col">
+                            <ul>
+                                 <li class="col-main-item"><h4><a href="#">Garantía</a></h4></li>
+                            </ul>
+                           
                         </div>
                     </div>
 
